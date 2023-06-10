@@ -1,0 +1,4 @@
+python-binance==1.0.17
+pandas==1.4.2
+Flask==2.2.3
+plotly==5.15.0

@@ -1,0 +1,17 @@
+<!-- piechart.html -->
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="pieChart"></div>
+
+    <script>
+        // Parse the JSON chart data
+        var chartData = JSON.parse('{{ chart_json | safe }}');
+
+        // Display the pie chart
+        Plotly.newPlot('pieChart', chartData.data, chartData.layout);
+    </script>
+</body>
+</html>
